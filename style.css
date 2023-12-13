@@ -396,10 +396,12 @@ main {
   background-color: var(--playbg);
   display: flex;
   justify-content: space-between;
+  padding-right: var(--l);
 }
 
 #play .title,
 #play .volume {
+  display: flex;
   width: var(--width);
   align-self: center;
 }
@@ -421,7 +423,6 @@ main {
 }
 
 #play .title {
-  display: flex;
   padding: var(--s);
   justify-content: space-around;
   align-items: center;
@@ -518,3 +519,28 @@ main {
 }
 
 /* CONTAINER DESTRA */
+
+#play .volume {
+  padding: var(--s);
+}
+
+#play .volume .time {
+  width: 60%;
+}
+
+#play .volume ul li {
+  display: inline-block;
+  margin-right: var(--s);
+}
+
+#play .volume .icons {
+  width: 40%;
+}
+
+#play .volume li > i {
+  font-size: 12px;
+}
+
+#play .volume .bar-container {
+  width: 100%;
+}

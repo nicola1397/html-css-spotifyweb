@@ -54,12 +54,14 @@ body {
   font-size: 14px;
 }
 
-#nav li {
+#nav li,
+#profile a {
   font-size: 13px;
   color: var(--txt-op);
 }
 
-#nav li:hover {
+#nav li:hover,
+#profile a:hover {
   color: white;
 }
 
@@ -146,6 +148,13 @@ main {
   padding: 0 var(--l);
 }
 
+/* ****** NAV FUNCTION CONTAINER ******* */
+
+#nav .menu-functions {
+  height: calc(100% - var(--bar));
+}
+
+/* NAV LOGO */
 #nav .logo {
   height: var(--bar);
   padding: var(--xl);
@@ -180,14 +189,14 @@ main {
 #nav .playlist li:first-child span::before {
   display: inline-block;
   content: "+";
-  font-weight: 500;
   width: 37px;
   height: 37px;
+  line-height: 37px;
   margin-right: 10px;
+  font-weight: 500;
   background-color: rgba(255, 255, 255, 0.6);
   font-size: 35px;
   text-align: center;
-  line-height: 37px;
   vertical-align: middle;
   color: black;
 }
@@ -197,6 +206,34 @@ main {
 }
 
 /* *** *** PROFILE *** *** */
+
+#profile {
+  height: var(--bar);
+  padding: 0 var(--l);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#profile .profile-bar {
+  display: flex;
+  line-height: var(--l);
+  align-items: center;
+}
+
+#profile span i {
+  margin-right: var(--s);
+}
+
+#profile .pp {
+  display: block;
+
+  width: var(--l);
+}
+
+#profile h2 {
+  padding-left: var(--m);
+}
 
 /* ** * CONTENT * ** */
 

@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spotify</title>
+    <link rel="icon" href="./img/favicon.ico" />
 
     <!-- GOOGLE FONTS -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,6 +24,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <!-- WRAPPER CONTENUTO -->
     <div class="vh-wrap">
@@ -29,59 +32,76 @@
       <main>
         <!-- MENU LATERALE -->
         <nav id="nav" class="clearfix">
-          <img src="./img/logo.svg" alt="spotify logo" class="logo" />
+          <div class="menu-functions">
+            <img src="./img/logo.svg" alt="spotify logo" class="logo" />
 
-          <!-- NAV BUTTONS -->
-          <ul class="menu">
-            <li class="current">
-              <a href="#">
-                <img src="./img/home.svg" alt="home" /><span>Home </span></a
-              >
-            </li>
-            <li>
-              <a href="#">
-                <img src="./img/search.svg" alt="search" /><span
-                  >Cerca
-                </span></a
-              >
-            </li>
-            <li>
-              <a href="#">
-                <img src="./img/libreria.svg" alt="library" /><span
-                  >La tua libreria
-                </span></a
-              >
-            </li>
-          </ul>
+            <!-- NAV BUTTONS -->
+            <ul class="menu">
+              <li class="current">
+                <a href="#">
+                  <img src="./img/home.svg" alt="home" /><span>Home </span></a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./img/search.svg" alt="search" /><span
+                    >Cerca
+                  </span></a
+                >
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./img/libreria.svg" alt="library" /><span
+                    >La tua libreria
+                  </span></a
+                >
+              </li>
+            </ul>
 
-          <h2>PLAYLIST</h2>
-          <ul class="playlist">
-            <li>
-              <a href="#"> <span>Crea Playlist</span></a>
-            </li>
-            <li>
-              <a href="#"> <span>Nome Playlist</span></a>
-            </li>
-            <li>
-              <a href="#"> <span>Nome Playlist</span></a>
-            </li>
-            <li>
-              <a href="#"> <span>Nome Playlist</span></a>
-            </li>
-            <li>
-              <a href="#"> <span>Nome Playlist</span></a>
-            </li>
-            <li>
-              <a href="#"> <span>Nome Playlist</span></a>
-            </li>
-            <li>
-              <a href="#"> <span>Nome Playlist</span></a>
-            </li>
-            <li>
-              <a href="#"> <span>Nome Playlist</span></a>
-            </li>
-          </ul>
+            <h2>PLAYLIST</h2>
+            <ul class="playlist">
+              <li>
+                <a href="#"> <span>Crea Playlist</span></a>
+              </li>
+              <li>
+                <a href="#"> <span>Nome Playlist</span></a>
+              </li>
+              <li>
+                <a href="#"> <span>Nome Playlist</span></a>
+              </li>
+              <li>
+                <a href="#"> <span>Nome Playlist</span></a>
+              </li>
+              <li>
+                <a href="#"> <span>Nome Playlist</span></a>
+              </li>
+              <li>
+                <a href="#"> <span>Nome Playlist</span></a>
+              </li>
+              <li>
+                <a href="#"> <span>Nome Playlist</span></a>
+              </li>
+              <li>
+                <a href="#"> <span>Nome Playlist</span></a>
+              </li>
+            </ul>
+          </div>
+          <div id="profile">
+            <a href="#"
+              ><span
+                ><i class="fa-regular fa-circle-down"></i>Installa app</span
+              ></a
+            >
+            <hr />
+            <div class="profile-bar">
+              <div class="pp">
+                <img src="./img/profile.svg" alt="PP" />
+              </div>
+              <h2>Nicola Gallo</h2>
+            </div>
+          </div>
         </nav>
+
         <section id="content" class="clearfix">
           <div class="upgrade"></div>
         </section>

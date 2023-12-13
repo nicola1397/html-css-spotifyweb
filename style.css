@@ -585,6 +585,57 @@ main {
 
 @media all and (max-width: 600px) {
   #nav {
-    width: var(--3xl);
+    width: 40px;
+  }
+
+  #content,
+  .upgrade-bar {
+    width: calc(100% - 40px);
+  }
+
+  #nav .menu-functions,
+  #nav #profile {
+    display: none;
+  }
+
+  #nav .smartphoneview {
+    position: relative;
+    height: 100%;
+  }
+
+  #nav .smartphoneview > *:not(.logoplaceholder):hover {
+    cursor: pointer;
+  }
+
+  #nav .logoplaceholder {
+    content: url(./img/logo-small.svg);
+    transform: scale(70%);
+  }
+
+  #nav .home {
+    content: url(./img/home.svg);
+    transform: scale(60%);
+    opacity: 0.6;
+  }
+  #nav .search {
+    content: url(./img/search.svg);
+    transform: scale(60%);
+    opacity: 0.6;
+  }
+  #nav .library {
+    content: url(./img/libreria.svg);
+    transform: scale(60%);
+    opacity: 0.6;
+  }
+
+  #nav .menuplaceholder > *:hover {
+    opacity: 1;
+  }
+
+  #nav .profileplaceholder {
+    content: url(./img/profile.svg);
+    transform: scale(60%);
+    position: absolute;
+    bottom: 0;
   }
 }

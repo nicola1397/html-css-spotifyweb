@@ -241,6 +241,12 @@ main {
   padding-left: var(--m);
 }
 
+/* NAV SMARTPHONE */
+
+#nav .smartphone {
+  display: none !important;
+}
+
 /* ** * CONTENT * ** */
 
 #content {
@@ -297,6 +303,7 @@ main {
 #gen li {
   display: inline-block;
   margin: 0 var(--s);
+  margin-bottom: 10px;
 }
 
 #gen li:first-child {
@@ -315,9 +322,6 @@ main {
 }
 
 /* ******* ALBUM SECTIONS ******* */
-
-#album {
-}
 
 #album h2 {
   margin-left: var(--l);
@@ -451,13 +455,23 @@ main {
 
 /* PULSANTI */
 
+#play .button-container ul {
+  display: flex;
+  width: 100%;
+  justify-items: center;
+}
+
 #play .button-container li {
   display: inline-block;
   font-size: 1rem;
   color: white;
-  margin: var(--s);
+  margin: var(--s) 0;
   line-height: 1.7rem;
   vertical-align: middle;
+}
+
+#play .button-container li > i {
+  margin: 0 var(--s);
 }
 
 #play .big i {
@@ -528,6 +542,12 @@ main {
   width: 60%;
 }
 
+#play .volume .icons ul {
+  display: flex;
+  width: 100%;
+  justify-items: center;
+}
+
 #play .volume ul li {
   display: inline-block;
   margin-right: var(--s);
@@ -541,6 +561,30 @@ main {
   font-size: 12px;
 }
 
+#play .volume li > i:hover {
+  cursor: pointer;
+}
+
 #play .volume .bar-container {
   width: 100%;
+}
+
+/* ******* ***** MEDIA QUERIES ***** ******* */
+
+@media all and (max-width: 768px) {
+  #album .album-container {
+    width: calc(100% / 2 - var(--l));
+  }
+
+  #play .volume .icons ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media all and (max-width: 600px) {
+  #nav {
+    width: var(--3xl);
+  }
 }

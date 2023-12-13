@@ -12,6 +12,12 @@ a:visited {
   text-decoration: none;
 }
 
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
 body {
   min-width: 500px;
   font-family: "Montserrat", sans-serif;
@@ -22,11 +28,14 @@ body {
 
 :root {
   --gap: 15px;
-  --txt-op: rgba (255, 255, 255, 0.4);
+  --txt-op: rgba(255, 255, 255, 0.4);
   --width: 230px;
+  --bar: 90px;
+  --mainbg: #141922;
+  --playbg: #282828;
 }
 
-/* IMPOSTAZIONI FONTS */
+/* * * IMPOSTAZIONI FONTS * * */
 
 /* NAV */
 #nav h2 {
@@ -90,4 +99,49 @@ body {
 
 #play .time {
   font-size: 10px;
+}
+
+/* ****** MAIN ****** */
+
+.vh-wrap {
+  height: 100vh;
+  width: 100%;
+}
+
+main {
+  height: calc(100vh - var(--bar));
+  overflow: hidden;
+}
+
+/* *** LEFT NAV MENU *** */
+#nav {
+  float: left;
+  width: var(--width);
+  height: 100%;
+  background-color: black;
+}
+
+/* ** * CONTENT * ** */
+
+#content {
+  background-color: var(--mainbg);
+  float: left;
+  width: calc(100% - var(--width));
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* *** UPGRADE SECTION TOP *** */
+
+.upgrade {
+  background-color: rgba(black, 0.4);
+  height: var(--bar);
+}
+
+/* * * * FOOTER * * * */
+
+footer {
+  height: var(--bar);
+  background-color: var(--playbg);
 }

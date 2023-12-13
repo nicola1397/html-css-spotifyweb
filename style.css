@@ -161,7 +161,7 @@ main {
 }
 
 /* NAV LOGO */
-#nav .logo {
+#nav .logo img {
   height: var(--bar);
   padding: var(--xl);
 }
@@ -593,6 +593,42 @@ main {
     width: calc(100% - 40px);
   }
 
+  #nav .logo {
+    content: url(./img/logo-small.svg);
+    transform: scale(70%);
+  }
+
+  #nav * {
+    padding: 0;
+    margin: auto;
+  }
+
+  #nav .menu span {
+    display: none;
+  }
+
+  #nav .menu li {
+    padding: 0;
+    text-align: center;
+  }
+
+  #nav .menu li img {
+    margin: 0;
+  }
+
+  #nav .playlist span,
+  h2 {
+    display: none;
+  }
+
+  #nav .profile h2,
+  span,
+  hr {
+    display: none;
+  }
+
+  /*
+
   #nav .menu-functions,
   #nav #profile {
     display: none;
@@ -638,4 +674,6 @@ main {
     position: absolute;
     bottom: 0;
   }
+
+  */
 }

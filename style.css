@@ -12,4 +12,82 @@ a:visited {
   text-decoration: none;
 }
 
+body {
+  min-width: 500px;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+/* VAR */
+
+:root {
+  --gap: 15px;
+  --txt-op: rgba (255, 255, 255, 0.4);
+  --width: 230px;
+}
+
 /* IMPOSTAZIONI FONTS */
+
+/* NAV */
+#nav h2 {
+  font-size: 14px;
+}
+
+#nav li {
+  font-size: 1rem;
+  color: var(--txt-op);
+}
+
+#nav li:hover {
+  color: white;
+}
+
+/* GENRE SELECTION */
+
+#gen li {
+  text-transform: uppercase;
+  font-size: 13px;
+  color: var(--txt-op);
+}
+
+#gen li:hover {
+  color: white;
+}
+
+/* ALBUMS SECTION */
+
+#album p {
+  font-size: 12px;
+}
+
+#album h2 {
+  font-size: 1.5rem;
+}
+
+#album h3 {
+  font-size: 1rem;
+}
+
+/* PLAYER */
+
+#play h2 {
+  font-size: 12px;
+}
+
+#play h2:hover {
+  text-decoration: underline;
+}
+
+#play p {
+  font-size: 10px;
+  color: var(--txt-op);
+}
+
+#play p:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+#play .time {
+  font-size: 10px;
+}

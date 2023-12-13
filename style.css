@@ -85,6 +85,7 @@ button {
 
 #album p {
   font-size: 12px;
+  color: var(--txt-op);
 }
 
 #album h2 {
@@ -303,6 +304,50 @@ main {
   bottom: -10px;
   right: 50%;
   transform: translateX(50%);
+}
+
+/* ******* ALBUM SECTIONS ******* */
+
+#album {
+}
+
+#album h2 {
+  margin: var(--l);
+}
+
+#album ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: var(--l);
+  gap: var(--l);
+}
+
+#album .album-container {
+  width: calc(100% / 6 - var(--l));
+  display: flex;
+  flex-direction: column;
+}
+
+/* CONTAINER IMMAGINE COPERTINA */
+#album .cover img {
+  width: 100%;
+}
+
+#album .album-container:hover .playhover {
+  position: absolute;
+  color: white;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* CONTAINER TITOLO ALBUM */
+
+#album .album-txt {
+  text-align: center;
+}
+
+#album .album-txt * {
+  margin: var(--s) 0;
 }
 
 /* * * * FOOTER * * * */

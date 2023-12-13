@@ -6,10 +6,16 @@
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 a:visited {
   text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
 }
 
 .clearfix::after {
@@ -33,6 +39,12 @@ body {
   --bar: 90px;
   --mainbg: #141922;
   --playbg: #282828;
+
+  --s: 10px;
+  --m: 15px;
+  --l: 20px;
+  --xl: 25px;
+  --xxl: 30px;
 }
 
 /* * * IMPOSTAZIONI FONTS * * */
@@ -43,7 +55,7 @@ body {
 }
 
 #nav li {
-  font-size: 1rem;
+  font-size: 13px;
   color: var(--txt-op);
 }
 
@@ -113,6 +125,11 @@ main {
   overflow: hidden;
 }
 
+.current {
+  box-shadow: 3px 0 greenyellow inset;
+  color: white !important;
+}
+
 /* *** LEFT NAV MENU *** */
 #nav {
   float: left;
@@ -120,6 +137,66 @@ main {
   height: 100%;
   background-color: black;
 }
+
+#nav ul {
+  line-height: var(--xxl);
+}
+
+#nav li {
+  padding: 0 var(--l);
+}
+
+#nav .logo {
+  height: var(--bar);
+  padding: var(--xl);
+}
+
+/* ** ** NAV SEZIONI ** ** */
+#nav li img {
+  width: var(--xl);
+  margin-right: var(--s);
+  vertical-align: middle;
+}
+
+#nav li:not(.current) img {
+  opacity: 0.4;
+}
+
+#nav li:hover img {
+  opacity: 1;
+}
+
+/* * ** MENU PLAYLIST ** * */
+
+#nav h2 {
+  padding: 0 var(--l);
+  margin: var(--m) 0;
+}
+
+#nav .playlist li:first-child {
+  margin: 5px 0;
+}
+
+#nav .playlist li:first-child span::before {
+  display: inline-block;
+  content: "+";
+  font-weight: 500;
+  width: 37px;
+  height: 37px;
+  margin-right: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+  font-size: 35px;
+  text-align: center;
+  line-height: 37px;
+  vertical-align: middle;
+  color: black;
+}
+
+#nav .playlist li:first-child:hover span::before {
+  background-color: white;
+}
+
+/* *** *** PROFILE *** *** */
 
 /* ** * CONTENT * ** */
 
@@ -135,7 +212,7 @@ main {
 /* *** UPGRADE SECTION TOP *** */
 
 .upgrade {
-  background-color: rgba(black, 0.4);
+  background-color: rgba(0, 0, 0, 0.4);
   height: var(--bar);
 }
 

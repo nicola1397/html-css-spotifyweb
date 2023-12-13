@@ -332,7 +332,7 @@ main {
   flex-direction: column;
 }
 
-/* CONTAINER IMMAGINE COPERTINA */
+/* *** CONTAINER IMMAGINE COPERTINA *** */
 #album .cover img {
   width: 100%;
 }
@@ -364,7 +364,14 @@ main {
   animation-duration: 0.3s;
 }
 
-/* CONTAINER TITOLO ALBUM */
+/* COPERTINA TONDA */
+
+#album .circle {
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* ** ** ** CONTAINER TITOLO ALBUM ** ** ** */
 
 #album .album-txt {
   text-align: center;

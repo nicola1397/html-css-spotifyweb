@@ -416,6 +416,10 @@ main {
   display: block;
 }
 
+#play .thumb img:hover {
+  cursor: pointer;
+}
+
 #play .title {
   display: flex;
   padding: var(--s);
@@ -423,19 +427,94 @@ main {
   align-items: center;
 }
 
-#play .song {
-}
-
-#play i {
+#play .title i {
   color: rgba(255, 255, 255, 0.4);
   margin: 0 5px;
   line-height: inherit;
+}
+
+#play .title i:hover {
+  color: white;
 }
 
 /* CONTAINER CENTRALE - CONTROLLI */
 
 #play .controls {
   width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--s);
+}
+
+/* PULSANTI */
+
+#play .button-container li {
+  display: inline-block;
+  font-size: 1rem;
+  color: white;
+  margin: var(--s);
+  line-height: 1.7rem;
+  vertical-align: middle;
+}
+
+#play .big i {
+  font-size: 1.7rem;
+}
+
+#play .button-container li:hover {
+  transform: scale(1.15);
+  cursor: pointer;
+}
+
+/* BARRA */
+
+#play .time {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#play .bar-container {
+  width: 80%;
+}
+
+#play .bar {
+  position: relative;
+  height: 4px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+}
+
+#play .progress {
+  position: absolute;
+  height: 4px;
+  width: 20%;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+}
+
+#play .dot {
+  display: none;
+  position: absolute;
+  bottom: 50%;
+  right: 0;
+  transform: translateY(50%);
+  width: var(--m);
+  height: var(--m);
+  background-color: white;
+  border-radius: 50%;
+}
+
+#play .bar:hover .progress {
+  background-color: greenyellow;
+}
+
+#play .bar:hover .dot {
+  display: block;
 }
 
 /* CONTAINER DESTRA */

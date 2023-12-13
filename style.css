@@ -254,10 +254,13 @@ main {
 /* *** UPGRADE SECTION TOP *** */
 
 .upgrade-bar {
+  position: fixed;
+  width: calc(100% - var(--width));
   background-color: rgba(0, 0, 0, 0.4);
   height: var(--bar);
   text-align: right;
-  padding: var(--l);
+  padding: var(--l) var(--xxl);
+  z-index: 1;
 }
 
 .upgrade {
@@ -273,11 +276,15 @@ main {
 }
 
 .upgrade:hover {
-  transform: scale(1.25);
+  transform: scale(1.1);
   animation-duration: 0.3s;
 }
 
 /* *** ** SCROLL CONTAINER ** *** */
+
+#content #scroll-page {
+  margin-top: var(--bar);
+}
 
 /* * GENRE SELECTION * */
 

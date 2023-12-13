@@ -45,6 +45,7 @@ body {
   --l: 20px;
   --xl: 25px;
   --xxl: 30px;
+  --3xl: 35px;
 }
 
 /* * * IMPOSTAZIONI FONTS * * */
@@ -390,7 +391,51 @@ main {
 
 /* * * * FOOTER * * * */
 
-footer {
+#play {
   height: var(--bar);
   background-color: var(--playbg);
+  display: flex;
+  justify-content: space-between;
 }
+
+#play .title,
+#play .volume {
+  width: var(--width);
+  align-self: center;
+}
+
+#play .title > *,
+#play .volume > * {
+  display: inline-block;
+}
+
+/* CONTAINER SINISTRA */
+
+#play .thumb img {
+  width: var(--3xl);
+  display: block;
+}
+
+#play .title {
+  display: flex;
+  padding: var(--s);
+  justify-content: space-around;
+  align-items: center;
+}
+
+#play .song {
+}
+
+#play i {
+  color: rgba(255, 255, 255, 0.4);
+  margin: 0 5px;
+  line-height: inherit;
+}
+
+/* CONTAINER CENTRALE - CONTROLLI */
+
+#play .controls {
+  width: 40%;
+}
+
+/* CONTAINER DESTRA */

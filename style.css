@@ -385,6 +385,10 @@ main {
   animation-duration: 0.3s;
 }
 
+#album .album-container:hover {
+  cursor: pointer;
+}
+
 /* COPERTINA TONDA */
 
 #album .circle {

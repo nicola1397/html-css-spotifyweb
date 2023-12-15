@@ -158,6 +158,7 @@ main {
 
 #nav .menu-functions {
   height: calc(100% - var(--bar));
+  overflow-y: auto;
 }
 
 /* NAV LOGO */
@@ -227,8 +228,13 @@ main {
   align-items: center;
 }
 
-#profile span i {
+#profile span i,
+#profile a i {
   margin-right: var(--s);
+}
+
+#profile a {
+  margin: var(--s) 0;
 }
 
 #profile .pp {
@@ -261,8 +267,10 @@ main {
 /* *** UPGRADE SECTION TOP *** */
 
 .upgrade-bar {
-  position: fixed;
-  width: calc(100% - var(--width));
+  position: sticky;
+  /* width: calc(100% - var(--width)); */
+  width: 100%;
+  top: 0;
   background-color: rgba(0, 0, 0, 0.4);
   height: var(--bar);
   text-align: right;
@@ -289,9 +297,9 @@ main {
 
 /* *** ** SCROLL CONTAINER ** *** */
 
-#content #scroll-page {
+/* #content #scroll-page {
   margin-top: var(--bar);
-}
+} */
 
 /* * GENRE SELECTION * */
 
@@ -347,6 +355,7 @@ main {
 /* *** CONTAINER IMMAGINE COPERTINA *** */
 #album .cover img {
   width: 100%;
+  display: block;
 }
 
 #album .cover {
@@ -613,6 +622,14 @@ main {
   }
 
   #nav .menu li img {
+    margin: 0;
+  }
+
+  #nav #profile a {
+    margin: var(--s) auto;
+  }
+
+  #nav #profile a i {
     margin: 0;
   }
 

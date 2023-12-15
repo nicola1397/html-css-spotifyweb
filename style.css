@@ -586,7 +586,7 @@ main {
 
 @media all and (max-width: 768px) {
   #album .album-container {
-    width: calc(100% / 2 - var(--l));
+    width: calc(100% / 4 - var(--l));
   }
 
   #play .volume .icons ul {
@@ -597,6 +597,10 @@ main {
 }
 
 @media all and (max-width: 600px) {
+  #album .album-container {
+    width: calc(100% / 2 - var(--l));
+  }
+
   #nav {
     width: 40px;
   }

@@ -18,11 +18,11 @@ ul {
   list-style: none;
 }
 
-.clearfix::after {
+/* .clearfix::after {
   content: "";
   clear: both;
   display: block;
-}
+} */
 
 body {
   min-width: 500px;
@@ -131,6 +131,7 @@ button {
 main {
   height: calc(100vh - var(--bar));
   overflow: hidden;
+  display: flex;
 }
 
 .current {
@@ -139,8 +140,9 @@ main {
 }
 
 /* *** LEFT NAV MENU *** */
+
 #nav {
-  float: left;
+  /* float: left; */
   width: var(--width);
   height: 100%;
   background-color: black;
